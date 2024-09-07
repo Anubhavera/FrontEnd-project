@@ -46,13 +46,13 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+/* button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -67,7 +67,7 @@ button:focus-visible {
   }
 }
 
-section {
+/* section {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -75,9 +75,9 @@ section {
   position: relative;
   scroll-snap-align: center;
   perspective: 500px;
-}
+} */
 
-section > div {
+/* section > div {
   width: 100vw;
   height: 200vh;
   position: relative;
@@ -85,4 +85,4 @@ section > div {
   margin: 20px;
   background: var(--white);
   overflow: hidden;
-}
+} */

@@ -63,23 +63,7 @@ html {
   background-color: #1e1e1e;
   position: relative;
 }
-.image-container img {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: 99vh;
-  display: flex;
-  width: 24vw;
-  top: 6vh;
-  left: 49vw;
-  background-color: #1e1e1e;
-  z-index: 3;
-  position: absolute;
-  /* position: relative; */
-  /* image-rendering: auto; */
-  /* padding-right: 48vw; */
-  border-radius: 50px;
-}
+
 .scrolls img {
   height: 90vh;
   width: 45vw;
@@ -91,13 +75,13 @@ html {
 .text h1 {
   font-family: lsmid;
   position: absolute;
-  font-size: 64rem;
+  font-size: 4.5vw;
   padding-top: 33vh;
   padding-left: 15vw;
   font-weight: 400;
   width: 25.11vw;
-  font-size: 4rem;
-  line-height: 3.6rem;
+  /* font-size: 4rem; */
+  line-height: 4vw;
   color: #aaaaaa;
   z-index: 2;
 }
@@ -129,7 +113,7 @@ html {
   top: 60vh;
   left: 15vw;
 }
-.rect{
+.rect {
   background-color: #111111;
   /* background-color: #000000; */
   height: 110vh;
@@ -138,13 +122,71 @@ html {
   top: 0vh;
   position: absolute;
   z-index: 1;
-
 }
-.rect img{
+.rect img {
   position: absolute;
   display: flex;
   left: 20vw;
   top: 44vh;
-  height:38vh;
+  height: 38vh;
   width: 2.2vw;
 }
+.image-container img {
+  /* 
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  height: 99vh;
+  display: flex;
+  max-width: 24vw;
+  top: 6vh;
+  left: 49vw;
+  background-color: #1e1e1e;
+  z-index: 3;
+  position: absolute;
+  border-radius: 6vh;
+  animation-name: anime1;
+  animation-duration: 4s;
+  /* animation-trigger: scroll; */
+  animation-timing-function: linear;
+  animation-duration: 5;
+  /* animation-iteration-count: infinite; */
+}
+/* @keyframes anime1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    @keyframes anime1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+} */
+
+:root{
+  --scroll: 0;
+}
+
+.image-container{position: sticky;
+  position: relative;
+  /* z-index: 0; */
+  top:0;
+  translate: 50 0;}

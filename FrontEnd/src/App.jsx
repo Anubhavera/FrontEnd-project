@@ -12,8 +12,22 @@ import {
 } from "framer-motion"
 import { gsap } from "gsap";
 
+
 function App() {
   const [count, setCount] = useState(0)
+
+
+window.addEventListener('scroll',setScrollVar)
+window.addEventListener('resize',setScrollVar)
+function setScrollVar(){
+  const htmlElement= document.documentElement;
+  const percentOfScreenHeightScrolled = htmlElement.scrollTop/htmlElement.clientHeight
+  console.log(Math.min(percentOfScreenHeightScrolled*100,100))
+  htmlElement.style.setProperty('--scroll',Math.min(percentOfScreenHeightScrolled*100,100))
+}
+setScrollVar()
+
+
 
   return (
     <>
@@ -33,17 +47,14 @@ function App() {
         <img src="/img/Ellipse 92.png" />
       </div>
       <div className="image-container">
+        <section>
         <img src="/img/1.png" />
+        </section>
       </div>
       <div className="rect">
         <img src="/img/Screenshot 2024-09-06 223906.png" />
       </div>
-      <script>
-      gsap.to('.box', {
-    scrollTrigger: '.image-container', 
-    x: 500
-    });
-      </script>
+      
     </>
   )
 }
