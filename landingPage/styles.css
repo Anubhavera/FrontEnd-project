@@ -1,0 +1,200 @@
+@font-face {
+  font-family: lsmid;
+  src: url(./Font/static/LeagueSpartan-Medium.ttf);
+}
+@font-face {
+  font-family: lsreg;
+  src: url(./Font/static/LeagueSpartan-Regular.ttf);
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+html,
+/* body {
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+/* } */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilory";
+} */
+
+ #main {
+  position: relative;
+  overflow: hidden;
+}
+#page1 {
+  min-height: 100vh;
+  width: 98.5vw;
+
+  background-color: #1e1e1e;
+
+  /* position: relative; */
+  /* display: flex; */
+}
+
+.centre {
+  height: 100vw;
+  width: 98vw;
+  /* background-color: black; */
+  /* display; */
+  /* background-color: black; */
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  position: relative;
+  z-index: 0;
+
+  /* border-bottom: 1px solid #e22727e6;
+  padding-bottom: 2.5vw;
+  margin-bottom: 2.3vw; */
+}
+.left {
+  width: 45vw;
+  height: 100vh;
+  position: relative;
+
+  /* background-image: url(./IMGS/Ellipse\ 92.png); */
+  /* background-size: ; */
+
+  /* display: flex; */
+  /* padding: 0 1vw; */
+  /* display: flex; */
+  /* padding: 1vw 3vw; */
+}
+.left h1 {
+  font-family: lsmid;
+  position: absolute;
+  font-size: 64rem;
+  padding-top: 34vh;
+  padding-left: 15vw;
+  font-weight: 400;
+  width: 25.11vw;
+  font-size: 4rem;
+  line-height: 3.5rem;
+  color: #aaaaaa;
+}
+.left h2 {
+  font-family: lsreg;
+  position: relative;
+  font-weight: 200;
+  padding-top: 63vh;
+  padding-left: 15vw;
+  height: 30vh;
+  width: 25vw;
+  font-size: 1.5vw;
+  line-height: 1.3vw;
+  color: #eeeeee;
+}
+
+.right {
+  width: 47vw;
+  height: 99vh;
+  /* padding: 1vw 3vw 1vw; */
+  /* background: red; */
+  /* display: absolute; */
+  position: relative;
+  /* z-index: 0; */
+  align-items: right;
+}
+.right img {
+  display: flex;
+  /* position: ; */
+  /* padding: top .875rem; */
+  padding-top: 6vh;
+  height: 41rem;
+  max-width: 23.188rem;
+  position: relative;
+  z-index: 3;
+
+  /* align-items: center; */
+}
+
+.left img {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 10vh;
+}
+
+.highlight {
+  /* font-weight: 700; Bold for 'Work' */
+  color: #f2f2f2; /* Blue color for emphasis */
+}
+.question {
+  color: #2196f3; /* Same blue color for the question mark */
+  font-size: 4.2rem; /* Slightly larger for the question mark */
+  z-index: 2;
+}
+
+.yellowHighlight {
+  font-family: lsreg;
+  position: absolute;
+  font-weight: 200;
+  padding-top: 63vh;
+  padding-left: 15vw;
+  height: 30vh;
+  width: 25vw;
+  font-size: 1.5vw;
+  line-height: 1.3vw;
+  color: #eeeeee;
+}
+.bulletpoints {
+  font-family: lsreg;
+  position: absolute;
+  font-weight: 200;
+  padding-top: 70vh;
+  padding-left: 15vw;
+  height: 30vh;
+  width: 25vw;
+  font-size: 1.5vw;
+  line-height: 1.3vw;
+  color: #eeeeee;
+}
+
+/* .rect {
+  background-color: #000000;
+  /* border-left: 0vw; */
+/* width: 70vw; */
+/* height: 100vh; */
+/* display: flex; */
+/* display: absolute; */
+/* right: 0vw; */
+/* position: relative; */
+/* z-index: 0; */
+/* } */
+
+#page2 {
+  min-height: 100vh;
+  width: 98.5vw;
+
+  background-color: #1e1e1e;
+}
+#page3 {
+  min-height: 100vh;
+  width: 98.5vw;
+
+  background-color: #1e1e1e;
+}
+#page4 {
+  min-height: 100vh;
+  width: 98.5vw;
+
+  background-color: #1e1e1e;
+}
+#page5 {
+  min-height: 100vh;
+  width: 98.5vw;
+
+  background-color: #1e1e1e;
+}
+#page6 {
+  min-height: 100vh;
+  width: 98.5vw;
+
+  background-color: #1e1e1e;
+}

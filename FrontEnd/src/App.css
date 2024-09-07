@@ -1,0 +1,150 @@
+/* .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  /* padding-left: 20.501vh; */
+/* background-color: black; */
+/* image-rendering: auto; */
+/* padding-right: 48vw; */
+/* } */
+@font-face {
+  font-family: lsmid;
+  src: url(../Font/static/LeagueSpartan-Medium.ttf);
+}
+@font-face {
+  font-family: lsreg;
+  src: url(../Font/static/LeagueSpartan-Regular.ttf);
+}
+* {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-container {
+  height: 110vh;
+  width: 98.9vw;
+  background-color: #1e1e1e;
+  position: relative;
+}
+.image-container img {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 99vh;
+  display: flex;
+  width: 24vw;
+  top: 6vh;
+  left: 49vw;
+  background-color: #1e1e1e;
+  z-index: 3;
+  position: absolute;
+  /* position: relative; */
+  /* image-rendering: auto; */
+  /* padding-right: 48vw; */
+  border-radius: 50px;
+}
+.scrolls img {
+  height: 90vh;
+  width: 45vw;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+}
+
+.text h1 {
+  font-family: lsmid;
+  position: absolute;
+  font-size: 64rem;
+  padding-top: 33vh;
+  padding-left: 15vw;
+  font-weight: 400;
+  width: 25.11vw;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  color: #aaaaaa;
+  z-index: 2;
+}
+.text h2 {
+  font-family: lsreg;
+  position: absolute;
+  font-weight: 100;
+  padding-top: 63vh;
+  padding-left: 15vw;
+  height: 30vh;
+  width: 25vw;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  color: #eeeeee;
+  z-index: 2;
+}
+.highlight {
+  color: #f2f2f2;
+}
+.question-mark {
+  color: #459bff;
+}
+.bar {
+  height: 0.3vh;
+  width: 6vw;
+  background-color: #459bff;
+  position: absolute;
+  z-index: 2;
+  top: 60vh;
+  left: 15vw;
+}
+.rect{
+  background-color: #111111;
+  /* background-color: #000000; */
+  height: 110vh;
+  width: 35vw;
+  right: 0vh;
+  top: 0vh;
+  position: absolute;
+  z-index: 1;
+
+}
+.rect img{
+  position: absolute;
+  display: flex;
+  left: 20vw;
+  top: 44vh;
+  height:38vh;
+  width: 2.2vw;
+}
